@@ -1,0 +1,105 @@
+body {
+    margin-left: 30%; margin-right: 30%; margin-top: -8px;
+}
+
+header {
+    display: flex;
+    background-color: #34344e;
+
+    & h2 {
+        padding-left: 1rem;
+
+        font-family: 'Roboto';
+        color: white;
+    }
+
+}
+
+.toolBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cbdad5;
+    box-shadow: inset 0px 5px 5px -2px rgba(0, 0, 0, 0.5);
+
+    & button {
+        width: 10rem;
+        height: 1.5rem;
+        margin-top: 1.5rem;
+
+        font-family: 'Calibri';
+        font-weight: bold;
+        font-size: 0.9rem;
+
+        cursor: pointer;
+    }
+}
+
+.newTask {
+    padding-top: 1rem;
+    background-color: #cbdad5;
+
+    font-family: 'Calibri';
+        font-size: 0.9rem;
+
+    & .task {
+        width: 50%;
+        margin-left: 1rem;
+        
+        outline: none;
+
+        
+    }
+
+    & .date {
+        float: right;
+        width: 6rem;
+        margin-right: 0.5rem;
+
+    }
+
+    & button {
+        width: 5rem;
+        height: 1rem;
+        margin-right: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        font-family: 'Calibri';
+        float: right;
+    }
+}
+
+.dataTable {
+    padding-top: 1rem;
+    background-color: #cbdad5;
+}
+
+table {
+    width: 100%;
+    
+    font-family: 'Calibri';
+    text-align: left;
+
+    border-collapse: collapse;
+
+    & th,td {
+        padding-left: 0.5rem;
+        border-bottom: 1px solid black;
+    }
+
+    & input {
+        width: 15px; height: 15px;
+        cursor: pointer;
+    }
+
+    & .check {width: 15%;}
+    & .task {width: 65%;}
+    & .date {width: 20%;}
+}
+
+.hidden {
+    display: none !important;
+}

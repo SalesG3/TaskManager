@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header>
+        <h2>GERENCIADOR DE TAREFAS:</h2>
+    </header>
+
+    <nav class="toolBar">
+        <button onclick="newTask()">Nova</button>
+        <button>Editar</button>
+        <button>Apagar</button>
+    </nav>
+
+    <section class="newTask">
+        <label class="task" for="task">Descrição:</label>
+        <button>SALVAR</button>
+        <label class="date" for="date">Vencimento:</label>
+        
+
+        <br>
+
+        <input class="task" type="text">
+        <button onclick="cancelTask()">CANCELAR</button>
+        <input class="date" type="date">
+        
+    </section>
+
+    <div class="dataTable">
+        <table>
+            <thead>
+                <tr>
+                    <th class="check">CHECK:</th>
+                    <th class="task">TAREFA:</th>
+                    <th class="date">VECTO.:</th>
+                </tr>
+            </thead>
+
+            <!--Inserir dados-->
+            <tbody id="dataTable">
+                <td><input type="checkbox"></td>
+                <td>teste</td>
+                <td>03/12/2002</td>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
