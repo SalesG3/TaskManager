@@ -21,6 +21,20 @@ function newTask() {
 
 }
 
+async function saveTask() {
+
+    let data = {
+        task: document.querySelector('#task').value,
+        date: document.querySelector('#date').value
+    }
+
+    let req = await fetch('http://localhost:8000/',{
+        method:'POST',
+        body:JSON.stringify(data)
+    })
+
+}
+
 function cancelTask() {
 
     document.querySelector('.newTask').classList.add('hidden');

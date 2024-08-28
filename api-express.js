@@ -30,5 +30,9 @@ app.get('/', async function(req, res){
 
 app.post('/', async function(req, res){
     
-    let [query] = await DBcon.execute('INSERT INTO tbl_TaskManager(task_check, task_description, task_vecto)')
+    let [query] = await DBcon.execute(`INSERT INTO tbl_TaskManager(task_check, task_description, task_vecto)
+        VALUES ('0','Teste','2024-12-03')`)
+        //TESTING WITH VALUES FIXEDS
+
+    res.send(query);
 })

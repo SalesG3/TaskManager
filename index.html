@@ -20,15 +20,15 @@
 
     <section class="newTask">
         <label class="task" for="task">Descrição:</label>
-        <button>SALVAR</button>
+        <button onclick="saveTask()">SALVAR</button>
         <label class="date" for="date">Vencimento:</label>
         
 
         <br>
 
-        <input class="task" type="text">
+        <input id="task" class="task" type="text">
         <button onclick="cancelTask()">CANCELAR</button>
-        <input class="date" type="date">
+        <input id="date" class="date" type="date">
         
     </section>
 
